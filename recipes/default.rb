@@ -8,18 +8,18 @@ postgresql_connection_info = {
 }
 
 # Create databases
-#postgresql_database 'charitybox_development' do
-#	connection postgresql_connection_info
-#	action     :create
-#end
-#postgresql_database 'charitybox_test' do
-#	connection postgresql_connection_info
-#	action     :create
-#end
-#postgresql_database 'charitybox_staging' do
-#	connection postgresql_connection_info
-#	action     :create
-#end
+postgresql_database 'charitybox_development' do
+	connection postgresql_connection_info
+	action     :create
+end
+postgresql_database 'charitybox_test' do
+	connection postgresql_connection_info
+	action     :create
+end
+postgresql_database 'charitybox_staging' do
+	connection postgresql_connection_info
+	action     :create
+end
 
 # Create a postgresql user but grant no privileges
 postgresql_database_user 'vagrant' do
