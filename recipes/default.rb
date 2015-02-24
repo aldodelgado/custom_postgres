@@ -1,5 +1,3 @@
-include_recipe "database::postgresql"
-include_recipe "database::postgresql_user"
 # Create connection
 postgresql_connection_info = {
 	:host     => '127.0.0.1',
