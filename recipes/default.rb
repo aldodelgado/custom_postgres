@@ -1,6 +1,4 @@
-begin
-  require 'pg'
-rescue Gem::LoadError
+
   if Gem.respond_to?(:install)
     Gem.install 'pg'
   else
@@ -63,4 +61,3 @@ rescue Gem::LoadError
 		privileges    [:all]
 		action        :grant
 	end
-end
